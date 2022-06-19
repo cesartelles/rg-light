@@ -13,7 +13,6 @@ export class StorageService {
 
     let storage = localStorage.getItem(environment.keyStorage)
     this.db = storage ? JSON.parse(storage) : this.getDefaultDB()
-    console.log("DB->", this.db)
   }
 
   getDefaultDB():Storage{

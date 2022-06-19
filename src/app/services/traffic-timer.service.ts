@@ -32,7 +32,6 @@ export class TrafficTimerService {
   
   start(){
     this.curTrafficLight = "red"
-    console.log("ANTES DE START")
     this.timer$.next(0)
   }
 

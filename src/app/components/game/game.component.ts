@@ -19,7 +19,7 @@ export class GameComponent implements OnInit, OnDestroy {
   constructor(private userService:UserService,
               private trafficTimerService:TrafficTimerService,
               private router: Router) { 
-
+                
   }
 
   ngOnInit(): void {
@@ -27,7 +27,6 @@ export class GameComponent implements OnInit, OnDestroy {
     this.user = this.userService.getCurrent()
 
     this.subscription = this.trafficTimerService.getTrafficEvents().subscribe((trafficLightColor)=>{
-      //console.log("COLOR->", trafficLightColor)
       this.trafficLightColor = trafficLightColor
     })
 

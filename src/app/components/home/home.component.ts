@@ -31,13 +31,11 @@ export class HomeComponent implements OnInit {
 
   register(){
 
-    console.log("REGISTER VALUE->",this.registerForm.value)
     if(this.registerForm.valid){
-      console.log("VALUE->",this.registerForm.value)
       this.user.name = this.registerForm.value.name;
       this.userService.create(this.user)
       this.router.navigate(['./game']);
     }
-    else console.log("INVALIDO")
+
   }
 }

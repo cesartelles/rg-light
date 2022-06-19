@@ -12,7 +12,6 @@ export class UserService {
 
   create(user:User){
     let db:Storage = this.storageService.getDB()
-    console.log("DB 1", db)
 
     if(!db.users.find(el => el.name == user.name))
       db.users.push(user)
@@ -20,7 +19,7 @@ export class UserService {
     db.currentUser = user.name
 
     this.storageService.setDB(db)
-    console.log("check data base->", this.storageService.getDB())
+
   }
 
   getCurrent():User{
