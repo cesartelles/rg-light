@@ -3,7 +3,6 @@ import { User } from 'src/app/models/user';
 import { UserService } from './../../services/user.service'
 import { TrafficTimerService } from './../../services/traffic-timer.service'
 import { Router } from '@angular/router';
-import { Subscription } from 'rxjs'
 
 @Component({
   selector: 'app-game',
@@ -21,30 +20,25 @@ export class GameComponent implements OnInit, OnDestroy {
               private trafficTimerService:TrafficTimerService,
               private router: Router) { 
 
-    this.user = this.userService.getCurrent()
-    console.log("CONSTRUCTOR")
   }
 
   ngOnInit(): void {
 
-    console.log("Antes on init")
+    this.user = this.userService.getCurrent()
+
     this.subscription = this.trafficTimerService.getTrafficEvents().subscribe((trafficLightColor)=>{
       //console.log("COLOR->", trafficLightColor)
       this.trafficLightColor = trafficLightColor
     })
-    console.log("ON INIT")
+
     this.start()
   }
 
   start(){
 
-    console.log("START")
     this.currentStep = ""
     this.trafficTimerService.start()
-  }
 
-  stop(){
-    this.trafficTimerService.stop();
   }
 
   stepAction(step:string){
@@ -72,7 +66,6 @@ export class GameComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(){
-    //this.trafficTimerService.getTrafficEvents().unsubscribe()
     this.subscription.unsubscribe()
   }
   

@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  nginx:
+    container_name: rglight-app
+    build:
+      context: .
+      dockerfile: Dockerfile-nginx.yml
+    ports:
+      - '8081:80'

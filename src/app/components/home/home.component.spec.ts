@@ -1,18 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser'
 import { HomeComponent } from './home.component';
+import { By } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { RouterTestingModule } from '@angular/router/testing';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule} from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { Router } from '@angular/router';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
+  let routerSpy = { navigate: jasmine.createSpy('navigate') };
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -25,8 +27,10 @@ describe('HomeComponent', () => {
         MatCardModule,
         MatFormFieldModule,
         MatButtonModule,
-        MatInputModule
-      ]
+        MatInputModule,
+        RouterTestingModule
+      ],
+      providers:[ { provide: Router, useValue: routerSpy } ]
     })
     .compileComponents();
   });
@@ -72,6 +76,19 @@ describe('HomeComponent', () => {
     fixture.detectChanges();
     let error = fixture.debugElement.query(By.css('mat-error'));
     expect(error.nativeElement.textContent).toContain("maximum of 10 characters")
+
+  })
+
+  it('should register', () => {
+
+    component.ngOnInit()
+
+    let nameInput = fixture.debugElement.query(By.css('#name'));
+    nameInput.nativeElement.value = "Jose";
+    nameInput.nativeElement.dispatchEvent(new Event('input'));
+    let btn = fixture.debugElement.query(By.css('#registerBtn'))
+    btn.nativeElement.click()
+    expect (routerSpy.navigate).toHaveBeenCalledWith(['./game']);
 
   })
 });

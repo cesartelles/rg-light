@@ -1,0 +1,19 @@
+FROM node:14.15.5-alpine as build-step
+
+RUN mkdir -p /app
+
+WORKDIR /app
+
+COPY package.json /app
+
+RUN npm install
+
+COPY . /app
+
+RUN npm run build --prod
+
+#Segunda Etapa
+FROM nginx:1.17.1-alpine
+COPY --from=build-step /app/dist/rg-light-ng/. /usr/share/nginx/html
+
+CMD ["nginx", "-g", "daemon off;"]
