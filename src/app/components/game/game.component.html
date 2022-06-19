@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+    <span>Hi {{ user.name }}! </span>
+
+    <i class="fa fa-sign-out" aria-hidden="true" (click)="exit()"></i>
+</mat-toolbar>
+
+<div class="container" fxLayout="row" fxLayoutAlign="center top" fxLayoutGap="5px" fxFlexFill>
+
+    <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="33%">
+
+        <div class="game-container">
+          <span class="score-txt">Hight score: {{ user.hightScore }} </span>
+          <i class='fas fa-traffic-light' [ngStyle]="{'color': trafficLightColor}"></i>
+          <span class="score-txt">Score: {{ user.score }} </span>
+          <div class="button-steps-container">
+            <button id="leftBtn" mat-raised-button color="primary" 
+            fxFlex="1 1" (click)="stepAction('L')">
+              LEFT
+            </button>
+            <button id="rightBtn" mat-raised-button color="primary" 
+            fxFlex="1 1" (click)="stepAction('R')">
+              RIGHT
+            </button>
+          </div>
+        </div>
+       
+
+    </div>
+</div>
