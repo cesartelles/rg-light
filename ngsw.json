@@ -1,0 +1,97 @@
+{
+  "configVersion": 1,
+  "timestamp": 1655657984345,
+  "index": "https://cesartelles.github.io/rg-light/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://cesartelles.github.io/rg-light/favicon.ico",
+        "https://cesartelles.github.io/rg-light/index.html",
+        "https://cesartelles.github.io/rg-light/main.577e1be1dd70a8fd.js",
+        "https://cesartelles.github.io/rg-light/manifest.webmanifest",
+        "https://cesartelles.github.io/rg-light/polyfills.71bd2fb79b685114.js",
+        "https://cesartelles.github.io/rg-light/runtime.db561351c0e5e85d.js",
+        "https://cesartelles.github.io/rg-light/styles.789d36d558f6b012.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://cesartelles.github.io/rg-light/assets/icons/icon-128x128.png",
+        "https://cesartelles.github.io/rg-light/assets/icons/icon-144x144.png",
+        "https://cesartelles.github.io/rg-light/assets/icons/icon-152x152.png",
+        "https://cesartelles.github.io/rg-light/assets/icons/icon-192x192.png",
+        "https://cesartelles.github.io/rg-light/assets/icons/icon-384x384.png",
+        "https://cesartelles.github.io/rg-light/assets/icons/icon-512x512.png",
+        "https://cesartelles.github.io/rg-light/assets/icons/icon-72x72.png",
+        "https://cesartelles.github.io/rg-light/assets/icons/icon-96x96.png",
+        "https://cesartelles.github.io/rg-light/fa-brands-400.7fa789ab57acb632.ttf",
+        "https://cesartelles.github.io/rg-light/fa-brands-400.859fc3887485de84.woff2",
+        "https://cesartelles.github.io/rg-light/fa-regular-400.2ffd018f0eda6f7b.woff2",
+        "https://cesartelles.github.io/rg-light/fa-regular-400.da02cb7e372f16a2.ttf",
+        "https://cesartelles.github.io/rg-light/fa-solid-900.3a463ec33b4fe9f7.ttf",
+        "https://cesartelles.github.io/rg-light/fa-solid-900.40ddefd79fe7af45.woff2",
+        "https://cesartelles.github.io/rg-light/fa-v4compatibility.924588dc97e66b08.ttf",
+        "https://cesartelles.github.io/rg-light/fa-v4compatibility.ee06c6f803f379bb.woff2"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://cesartelles.github.io/rg-light/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://cesartelles.github.io/rg-light/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://cesartelles.github.io/rg-light/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://cesartelles.github.io/rg-light/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://cesartelles.github.io/rg-light/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://cesartelles.github.io/rg-light/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://cesartelles.github.io/rg-light/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://cesartelles.github.io/rg-light/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://cesartelles.github.io/rg-light/fa-brands-400.7fa789ab57acb632.ttf": "acc07d5e1ab5b96b23fabb53b1f4e416c7c0a46d",
+    "https://cesartelles.github.io/rg-light/fa-brands-400.859fc3887485de84.woff2": "a280ecdddd14695fad22599301ab03adfe5224c0",
+    "https://cesartelles.github.io/rg-light/fa-regular-400.2ffd018f0eda6f7b.woff2": "379ca48f70f3d4f79f8bf1079881c7c5af4f44a4",
+    "https://cesartelles.github.io/rg-light/fa-regular-400.da02cb7e372f16a2.ttf": "a14023c43173628d93858c0f3fc90cf54b18a28e",
+    "https://cesartelles.github.io/rg-light/fa-solid-900.3a463ec33b4fe9f7.ttf": "9225d6cb428fce41704cab29b8bb43b76c67f8b4",
+    "https://cesartelles.github.io/rg-light/fa-solid-900.40ddefd79fe7af45.woff2": "2717f3f58271f2f2e6120d9937c7227002656d34",
+    "https://cesartelles.github.io/rg-light/fa-v4compatibility.924588dc97e66b08.ttf": "e688e02012b9e5269a09809b0d666edc87527cb2",
+    "https://cesartelles.github.io/rg-light/fa-v4compatibility.ee06c6f803f379bb.woff2": "951ded71094a52e249ac52799fac7cbb68368270",
+    "https://cesartelles.github.io/rg-light/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://cesartelles.github.io/rg-light/index.html": "773f5db6418e0110e0d3644154f060b0aeabf931",
+    "https://cesartelles.github.io/rg-light/main.577e1be1dd70a8fd.js": "c2b46c26878d6904428f8c30f7b1c12a25f63893",
+    "https://cesartelles.github.io/rg-light/manifest.webmanifest": "0c12af47c02808ad5af9b99fa9c08b3ae6e26df4",
+    "https://cesartelles.github.io/rg-light/polyfills.71bd2fb79b685114.js": "2a97a65577163134ffef24cb7e8af2e6d2c1290e",
+    "https://cesartelles.github.io/rg-light/runtime.db561351c0e5e85d.js": "1325915164cdfde7f92699e2f5ffcb9f6cf55978",
+    "https://cesartelles.github.io/rg-light/styles.789d36d558f6b012.css": "ef6d2fb6a8953ca1741d7f0ed7fa08b0dad54813"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
